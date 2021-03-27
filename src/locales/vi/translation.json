@@ -1,0 +1,13 @@
+{
+  "loginPage": {
+    "title": "Trang đăng nhập",
+    "signIn": "Đăng nhập",
+    "slogan": "Tri Thức - Đạo đức - Sáng tạo",
+    "labelUsername": "Tên đăng nhập",
+    "placeholderUsername": "Nhập tên đăng nhập hoặc email",
+    "labelPwd": "Mật khẩu",
+    "placeholderPwd": "Mật khẩu",
+    "continue": "Tiếp tục",
+    "selectLanguage": "Chọn ngôn ngữ"
+  }
+}
