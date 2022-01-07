@@ -16,6 +16,9 @@ import { HomePage } from './pages/HomePage/Loadable';
 import { LoginPage } from './pages/LoginPage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
+import PrivateRoute from './components/PrivateRoute';
+import { AdminPage } from './pages/AdminPage';
+import ExamPage from './pages/TestPage';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -30,8 +33,10 @@ export function App() {
       </Helmet>
 
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <PrivateRoute exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
+        <Route exact path="/admin" component={AdminPage} />
+        <Route exact path="/test" component={ExamPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

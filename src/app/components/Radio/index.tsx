@@ -98,12 +98,7 @@ const Wrapper = styled.div`
     &:focus {
       + label {
         &::before {
-          box-shadow: 0 0 0 3px
-            ${p =>
-              p.theme.primary.replace(
-                /rgba?(\(\s*\d+\s*,\s*\d+\s*,\s*\d+)(?:\s*,.+?)?\)/,
-                'rgba$1,0.2)',
-              )};
+          box-shadow: 0 0 0 3px;
         }
       }
     }
